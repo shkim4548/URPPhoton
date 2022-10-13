@@ -20,9 +20,9 @@ public class Bullet : MonoBehaviour
         //충돌 지점 추출
         var contact = coll.GetContact(0);
         //충돌 지점에 스파크 이펙트 생성
-        var obj = Instantiate(effect, contact.point, Quaternion.LookRotation(-contact.normal));
+        //var obj = Instantiate(effect, contact.point, Quaternion.LookRotation(-contact.normal));
 
-        Destroy(obj, 2.0f);
+        //Destroy(obj, 2.0f);
         Destroy(this.gameObject);
     }
 }
